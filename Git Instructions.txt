@@ -1,0 +1,25 @@
+Open GitBash to open the terminal
+
+$ ls   // reads the contents in your current directory
+$ cd <subdir_name>  // goes into the named directory
+$ cd ..             // goes up one directory (the parent directory)
+
+$ git status       // shows the changes in your local repository (NOT in remote repository)
+$ git add <file_name>  // "tracks" the file named, so its changes can be added to the remote repository
+$ git add .            // tracks all new changes made in your local repo, to be added to the remote repository
+
+$ git commit -m "<message>"  // creates a commit, with the tracked files, and the message provided
+$ git push                   // pushes local commits to the remote repository
+
+$ git pull                   // grabs all changes in the remote repository and puts them in your local repository
+
+$ git diff                   // shows all local changes made since last committing
+$ git diff <file_name>       // shows all local changes made to the specified file since committing
+
+
+Tutorial 1:  Adding files to the remot repository:
+$ cd location/of/local_repository
+$ git status                       //make sure the changes you made are showing up 
+$ git add <file1> <file2> <file3>...   //track those files to be committed
+$ git commit -m "I'm adding files 1-3 to the remote repository"
+$ git push
